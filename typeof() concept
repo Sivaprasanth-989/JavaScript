@@ -1,0 +1,6 @@
+let a = 1234;
+let b = 5678;
+
+console.log(typeof(123));
+console.log(typeof(b));
+console.log(typeof(a));
