@@ -1,0 +1,26 @@
+// creating a property for a person (key-value pair concept we use for object data structure).
+
+let person = {
+    name : "Chirdeep",
+    age : 28
+     "5" : "invalid indentifier usage " //for using invalid identifiers use ""
+};
+console.log(person);
+
+// accessing object properties.
+
+console.log(person.name);
+console.log(person.age);
+
+console.log(person['name']);
+console.log(person["age"]);
+
+// also we can use bracket notation for invalid identifiers (cause we use double qoutes for it so it works) as well.
+
+console.log(person["5"]);
+
+//variable as key.
+
+let temp = "name";
+console.log(person[temp]);
+console.log(person.temp); // its shows undefined cause search for the temp key in that object hence its not exsit its shows alike that
