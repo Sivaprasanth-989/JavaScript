@@ -1,0 +1,19 @@
+let myArray = [5,"six",8.2,2];
+myArray[2] = 7;
+console.log(myArray);
+console.log(myArray[0]);
+console.log(myArray[1]);
+console.log(myArray[2]);
+let lengthOfArray = myArray.length;
+console.log(lengthOfArray);
+
+// push method (to add an ele at the last)
+myArray.push(true);
+console.log(myArray);
+myArray.push(false,Boolean);
+console.log(myArray);
+
+// pop method (removes the last if used in an array and also by storing and usin pop also do the same thing as removes)
+console.log(myArray); //its quite unique abt this method
+let lastItem = myArray.pop();
+console.log(lastItem);
