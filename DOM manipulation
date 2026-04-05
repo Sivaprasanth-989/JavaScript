@@ -1,0 +1,39 @@
+// creating heading element in for html in JS using createElement 
+let h1Element = document.createElement('h1');
+h1Element.textContent = "Welcome home sir!";
+console.log(h1Element);
+// appending it to the body of html DOM using this line
+document.body.appendChild(h1Element);
+
+// storing in a container
+let containerElement = document.getElementById('myContainer');
+containerElement.appendChild(h1Element);
+console.log(containerElement);
+
+
+// creatiing & appending button elemenet!
+
+let butElement = document.createElement('button');
+butElement.textContent = "Daddy's home";
+containerElement.appendChild(butElement);
+console.log(containerElement);
+
+//creating function expressions on JS by manipulating DOM and adding the classsList.add to add the css styles in JS
+
+let butElement = document.createElement('button');
+butElement.textContent = "Daddy's home";
+butElement.onclick = function() {
+    h1Element.textContent = "PLaying 'Bille Jean' ";
+    h1Element.classList.add('heading');
+    // console.log(h1Element);
+};
+containerElement.appendChild(butElement);
+
+// also removing styles using another button and by creating and expressing in JS as well
+
+let removeStylesButtonElement = document.createElement('button');
+removeStylesButtonElement.textContent = "Remove Styles";
+removeStylesButtonElement.onclick = function() {
+    h1Element.classList.remove('heading');
+};
+containerElement.appendChild(removeStylesButtonElement);
