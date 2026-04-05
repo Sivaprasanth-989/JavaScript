@@ -1,0 +1,32 @@
+let person = {
+    name : "Chirdeep",
+    age : 28,
+};
+// Object destructuring for accesing multiple keys unpacking values of it 
+let {name, age} = person;
+console.log(name);
+console.log(person.name);
+
+//
+
+let person = {
+    name : "Chirdeep",
+    age : 28,
+};
+
+person.name = "Sivaprasanth";
+person.age = 19;
+console.log(person.name);
+console.log(person.age);
+
+// adding properties..
+
+let person = {
+    name : "Chirdeep",
+    age : 28,
+};
+
+person.gender = "Male";
+person.city = "Tiruppur";
+person['address'] = 'thottiaplayam';
+console.log(person.city);
