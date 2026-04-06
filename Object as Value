@@ -1,0 +1,19 @@
+let person = {
+    name : "Chirdeep",
+    age : 28,
+    run : function(){
+        console.log("Hello World!");
+    },
+    habits : ["Playing Chess", "Dancing"],
+    car : {
+        name : "Audi",
+        model : "A6",
+        transmission : "Auto"
+    }
+    
+};
+person.run();
+console.log(person.habits[0]);
+console.log(person["habits"]);
+console.log(person.car);
+console.log(person.car.model);
