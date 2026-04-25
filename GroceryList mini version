@@ -1,0 +1,27 @@
+let groceryList = ["Apples", "Boost Drink", "Butterscotch Ice Cream", "Tomato Ketchup", "Dairy Milk Chocolates", "Pasta"];
+// container
+let grListEle = document.getElementById("groceryListContainer");
+grListEle.classList.add("bg-container");
+
+// heading
+let groceryTitle = document.createElement("h1");
+groceryTitle.textContent = "Grocery List";
+groceryTitle.classList.add("heading");
+grListEle.append(groceryTitle);
+
+// list container
+let listContainer = document.createElement("div");
+listContainer.classList.add("list-container");
+grListEle.append(listContainer);
+
+let ulList = document.createElement("ul");
+//  ulList.classList.add("listContainer");
+listContainer.appendChild(ulList);
+
+for (let item of groceryList) {
+    let listItems = document.createElement("li");
+    listItems.classList.add("delivery-text");
+    listItems.textContent = item;
+    ulList.append(listItems);
+
+}
