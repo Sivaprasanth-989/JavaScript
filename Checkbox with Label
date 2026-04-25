@@ -1,0 +1,14 @@
+let chboxLabelContainer = document.getElementById("checkboxWithLabelContainer");
+chboxLabelContainer.classList.add("text-center", "p-5");
+
+let input = document.createElement("input");
+input.type = "checkbox";
+input.id = "checkbox"
+chboxLabelContainer.appendChild(input);
+
+let labelEle = document.createElement("label");
+labelEle.textContent = "Click Me!";
+labelEle.id = "checkboxLabel";
+labelEle.classList.add("ml-2")
+labelEle.setAttribute("for", "checkbox");
+chboxLabelContainer.appendChild(labelEle);
