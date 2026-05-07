@@ -7,3 +7,13 @@ let result = myArray.findIndex(function(ele) {
 });
 console.log(result);
 //  thats how the flow of  execution and performs upon the array  by using findIndex function method freaking loop logic by the way !!
+
+let findId = customerData.findIndex(function(eachItem) {
+    if (eachItem.id === 101) {
+        return true
+    } else {
+        return false
+    }
+});
+
+console.log(findId)
