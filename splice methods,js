@@ -1,0 +1,9 @@
+let myArray = [1, 2, "six", 7, 8, 9];
+// myArray.splice(2, 0, 2.5, 3.5);
+myArray.splice(2,1,7);
+console.log(myArray);
+
+
+let deletedItems = myArray.splice(2, 3);
+console.log(myArray);
+console.log(deletedItems);
