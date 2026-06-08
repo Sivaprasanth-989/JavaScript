@@ -8,7 +8,7 @@ let data = {
 let options = {
     method:"POST",
     headers:{
-        "Content-Type":"application.json",
+        "Content-Type":"application/json",
         Accept:"application/json",
         Authorization:"Bearer 77a88dc984404554d9ba1ec32056cdca4b478d4c6078e702e1d6af307b6c0f88"
     },
